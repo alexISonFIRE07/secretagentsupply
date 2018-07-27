@@ -1,0 +1,29 @@
+html {
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  font-family: helvetica;
+}
+
+
+/* new arrival section */
+.logo {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+
+}
+.box {
+  display: flex;
+  width: 960px;
+}
+.box h3 {
+  margin: .66rem 0;
+}
+.box img {
+
+}
+
+.background {
+  background-image: url('../images/moto.jpeg');
+}
