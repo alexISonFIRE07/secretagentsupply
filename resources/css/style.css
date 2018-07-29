@@ -16,14 +16,54 @@ html {
 .box {
   display: flex;
   width: 960px;
+  align-items: center;
 }
-.box h3 {
-  margin: .66rem 0;
+.box {
+  padding: .66rem 0;
 }
 .box img {
-
+  height: 1.5rem;
+  margin: 0 1rem 0 .5rem;
 }
 
 .background {
   background-image: url('../images/moto.jpeg');
+  background-repeat: no-repeat;
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.newarrival{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.boxtwo {
+  background-color: black;
+  width: 20rem;
+  padding: 2rem 3rem;
+  position: relative;
+  top: 9rem;
+}
+.newarrival h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.newarrival h3 {
+  font-family: helvetica;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  background-color: firebrick;
+  justify-content: space-around;
+
+}
+nav a {
+  color: white;
+
+}
+nav h3 {
+  padding: .75rem 0rem;
 }
