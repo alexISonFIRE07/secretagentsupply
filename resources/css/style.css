@@ -1,7 +1,7 @@
 html {
   font-size: 18px;
   color: white;
-  background-color: black;
+  background-color: white;
   font-family: helvetica;
 }
 
@@ -58,8 +58,24 @@ nav {
   display: flex;
   background-color: firebrick;
   justify-content: space-around;
+  max-width: 960px;
+  margin: 0 auto;
+  }
+
+.nav {
+  background-color: firebrick;
 
 }
+
+.mobilenav a {
+  color: white;
+  padding: 2rem;
+}
+.mobilenav {
+  padding: 1rem;
+  text-align: center;
+}
+
 nav a {
   color: white;
 
@@ -68,32 +84,94 @@ nav h3 {
   padding: .75rem 0rem;
 }
 
-/*  featured items */
-.container{
+/* Featured */
+
+.masscontainer{
+  max-width: 960px;
+  margin: 0 auto;
   background-color: white;
-  padding-top: 3rem;
+}
+
+.container {
+
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0 0 0;
+
+}
+
+.picture {
+  border: 4px solid black;
+  padding: 2rem 0;
+  height: 9em;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .item {
-  display: flex;
-  justify-content: space-around;
-}
-.items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 30%;
-  border: 4px solid black;
-  background-color: white;
+}
+
+.item h3 {
+  background-color: black;
+  padding: .5rem;
+  text-align: center;
+
 }
 .picture img {
-  width: 100%;
-  background-color: white;
-  padding: 2rem;
-  max-width: 8rem;
+  max-width: 8rem
 }
- span {
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+}
+.item2 {
+  width: 35%;
+  margin: 3rem 0 4rem 0;
+}
+.item2 h3 {
   background-color: black;
-  display: block;
+  padding: 1rem 0 1rem 2rem ;
+}
+span {
+  color: gray;
+}
+
+/* footer */
+
+footer {
+  padding: 5rem 0;
+  background-color: black;
+}
+footer h3{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px)
+{
+.glasses  {
+  display: none;
+}
+.item {
+  width: 47%;
+}
+.item2 {
+  width: 35%;
+
+}
+nav{
+  display: none;
+}
+}
+
+@media only screen and (min-width: 1024px)
+{
+  .mobilenav{
+    display: none;
+  }
 }
